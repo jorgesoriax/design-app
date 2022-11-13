@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   Flex,
+  Heading,
   IconButton,
   Link,
   Stack,
@@ -17,8 +18,8 @@ export default function Navbar() {
   const toggle = () => setIsOpen(!isOpen);
   const { colorMode, toggleColorMode } = useColorMode();
   const links = [
-    { title: "Inspiración", href: "" },
-    { title: "Blog", href: "" },
+    { title: "Inspiración", href: "#" },
+    { title: "Blog", href: "#" },
   ];
 
   const MenuToggle = ({ toggle, isOpen }) => {
@@ -53,12 +54,16 @@ export default function Navbar() {
         >
           <Stack spacing={4} direction={["column", "column", "row", "row"]}>
             {links.map((link, index) => (
-              <NextLink key={index} href={link.href} passHref>
+              <NextLink key={index} href={link.href} legacyBehavior passHref>
+                {/* <Link>
+                  <Heading>
+                    {link.title}
+                  </Heading>
+                </Link> */}
                 <Button
                   as="a"
-                  isExternal
                   variant="outline"
-                  w="full"
+                  w={{ base: "full", md: "auto" }}
                   fontWeight="medium"
                 >
                   {link.title}
@@ -94,8 +99,8 @@ export default function Navbar() {
         wrap="wrap"
         w="100%"
         py={{ base: 8, md: 12 }}
-        borderBottom={isOpen ? { base: "1px", md: 0 } : 0}
-        borderColor="gray.200"
+        // borderBottom={isOpen ? { base: "1px", md: 0 } : 0}
+        // borderColor="gray.200"
       >
         {children}
       </Flex>

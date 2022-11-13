@@ -17,6 +17,7 @@ const theme = extendTheme({
   },
   fonts: {
     heading: `"Poppins", sans-serif`,
+    // heading: `"Merriweather", serif`,
     body: `"Inter", sans-serif`,
   },
   config: {
