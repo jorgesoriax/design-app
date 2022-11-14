@@ -4,6 +4,7 @@ import Navbar from "../src/components/Navbar";
 import Hero from "../src/components/Hero";
 import Onboarding from "../src/components/Onboarding";
 import Gallery from "../src/components/Gallery";
+import ReadyTo from "../src/components/ReadyTo";
 
 export default function Home() {
   return (
@@ -18,7 +19,8 @@ export default function Home() {
         <Navbar />
         {/* <Hero/> */}
         {/* <Onboarding/> */}
-        <Gallery />
+        {/* <Gallery /> */}
+        <ReadyTo/>
       </Container>
     </div>
   );
