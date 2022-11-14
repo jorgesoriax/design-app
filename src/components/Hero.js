@@ -12,15 +12,15 @@ import {
 import NextImage from "next/image";
 
 export default function Hero() {
-  return (
-    <Stack
-      justify={{ base: "center", md: "space-between" }}
-      direction={{ base: "column-reverse", md: "row" }}
-      align={{ base: "normal", md: "flex-end" }}
-      spacing={{ base: 8 }}
-    >
-      <Box w={{ base: "", md: "50%" }} h="fit-content">
-        <VStack align="left" spacing={2} mb={{base: 8, md: 12}}>
+  const Content = () => {
+    return (
+      <Box w={{ md: "50%" }}>
+        <VStack
+          align="left"
+          spacing={2}
+          mb={{ base: 8, md: 12 }}
+          h="fit-content"
+        >
           <Text color="gray.500">/ Diseño Gráfico</Text>
           <Heading fontWeight="semibold">
             <Highlight
@@ -45,21 +45,46 @@ export default function Hero() {
           </Button>
         </HStack>
       </Box>
+    );
+  };
+  const Illustration = () => {
+    return (
       <Stack
-        w={{ base: "", md: "45%" }}
+        w={{ md: "45%" }}
         border="1px"
         borderColor="gray.200"
         borderRadius="3xl"
-        objectFit="cover"
         justify="center"
         align="center"
       >
         <Image
           src="/images/hero.png"
           boxSize={{ base: "350px", md: "450px" }}
+          fit="cover"
           alt="hero image"
         />
       </Stack>
-    </Stack>
+    );
+  };
+  const HeroContainer = ({ children }) => {
+    return (
+      <Stack minH="calc(100vh - 146px)" border="1px" borderColor="red">
+        <Stack
+          justify={{ base: "center", md: "space-between" }}
+          direction={{ base: "column-reverse", md: "row" }}
+          align={{ base: "normal", md: "flex-end" }}
+          spacing={{ base: 8 }}
+        >
+          {children}
+        </Stack>
+      </Stack>
+    );
+  };
+
+  return (
+    <HeroContainer>
+      <Content />
+      <Illustration />
+    </HeroContainer>
   );
 }

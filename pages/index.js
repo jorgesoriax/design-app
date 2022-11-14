@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Container } from "@chakra-ui/react";
 import Navbar from "../src/components/Navbar";
 import Hero from "../src/components/Hero";
+import Onboarding from "../src/components/Onboarding";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Container maxW={{ base: "90%", md: "70%" }} p={0}>
         <Navbar />
         <Hero/>
+        <Onboarding/>
       </Container>
     </div>
   );
