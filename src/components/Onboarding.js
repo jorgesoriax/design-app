@@ -17,7 +17,7 @@ export default function Onboarding() {
         >
           <Image src="/images/card.png" alt="hero image" fit="cover" />
         </Stack>
-        <Text fontWeight="medium">{title}</Text>
+        <Text fontWeight="medium" fontSize={18}>{title}</Text>
         <Text color="gray.500">{description}</Text>
       </VStack>
     );
