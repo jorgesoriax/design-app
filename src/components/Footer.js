@@ -46,8 +46,8 @@ export default function Footer() {
           <List>
             <HStack spacing={8}>
               {footer.secondary.map(({ title, href }, index) => (
-                <ListItem>
-                  <NextLink key={index} href={href} legacyBehavior passHref>
+                <ListItem key={index}>
+                  <NextLink href={href} legacyBehavior passHref>
                     <Link>{title}</Link>
                   </NextLink>
                 </ListItem>
@@ -65,9 +65,14 @@ export default function Footer() {
           <List>
             <HStack spacing={4} justify="end">
               {footer.socialMedia.map(({ title, href, phIcon }, index) => (
-                <ListItem>
-                  <NextLink key={index} href={href} legacyBehavior passHref>
-                    <IconButton as="a" target="_blank" rel="noopener noreferrer" icon={phIcon} />
+                <ListItem key={index}>
+                  <NextLink href={href} legacyBehavior passHref>
+                    <IconButton
+                      as="a"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      icon={phIcon}
+                    />
                   </NextLink>
                 </ListItem>
               ))}
