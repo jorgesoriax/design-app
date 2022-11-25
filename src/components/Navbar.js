@@ -53,20 +53,15 @@ export default function Navbar() {
           direction={["column", "column", "row", "row"]}
         >
           <Stack spacing={4} direction={["column", "column", "row", "row"]}>
-            {links.map((link, index) => (
-              <NextLink key={index} href={link.href} legacyBehavior passHref>
-                {/* <Link>
-                  <Heading>
-                    {link.title}
-                  </Heading>
-                </Link> */}
+            {links.map(({href, title}, index) => (
+              <NextLink key={index} href={href} legacyBehavior passHref>
                 <Button
                   as="a"
                   variant="outline"
                   w={{ base: "full", md: "auto" }}
                   fontWeight="medium"
                 >
-                  {link.title}
+                  {title}
                 </Button>
               </NextLink>
             ))}
@@ -99,8 +94,6 @@ export default function Navbar() {
         wrap="wrap"
         w="100%"
         py={{ base: 8, md: 12 }}
-        // borderBottom={isOpen ? { base: "1px", md: 0 } : 0}
-        // borderColor="gray.200"
       >
         {children}
       </Flex>

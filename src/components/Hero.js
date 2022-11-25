@@ -68,7 +68,7 @@ export default function Hero() {
   };
   const HeroContainer = ({ children }) => {
     return (
-      <Stack minH="calc(100vh - 146px)" border="1px" borderColor="red">
+      <Stack minH="calc(100vh - 146px)">
         <Stack
           justify={{ base: "center", md: "space-between" }}
           direction={{ base: "column-reverse", md: "row" }}

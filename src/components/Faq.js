@@ -27,18 +27,18 @@ import NextLink from "next/link";
 export default function Faq() {
   const Contact = () => {
     return (
-      <HStack spacing={4}>
+      <Stack spacing={4} direction={{ sm: "column", md: "column", lg: "row" }}>
         <NextLink href="#" legacyBehavior passHref>
           <Button as="a" leftIcon={<PaperPlaneTilt size={24} weight="fill" />}>
             example.support@design.com
           </Button>
         </NextLink>
         <NextLink href="#" legacyBehavior passHref>
-          <Button as="a" leftIcon={<WhatsappLogo size={26} weight="fill" />}>
+          <Button as="a" target="_blank" rel="noopener noreferrer" leftIcon={<WhatsappLogo size={26} weight="fill" />}>
             +52 81 1234 5678
           </Button>
         </NextLink>
-      </HStack>
+      </Stack>
     );
   };
   const AccordionContainer = () => {
@@ -46,7 +46,7 @@ export default function Faq() {
       <Accordion allowMultiple pb={12}>
         <VStack spacing={4}>
           {faq.map(({ question, answer }, index) => (
-            <AccordionItem w="full" border={0}>
+            <AccordionItem key={index} w="full" border={0}>
               {({ isExpanded }) => (
                 <Stack
                   spacing={0}
@@ -93,7 +93,7 @@ export default function Faq() {
   };
   const FaqContainer = ({ children }) => {
     return (
-      <Stack spacing={0} pb={{ base: 8, md: 12 }} border="1px solid red">
+      <Stack spacing={0} pb={{ base: 8, md: 12 }}>
         {children}
       </Stack>
     );

@@ -23,8 +23,6 @@ export default function Gallery() {
   const GalleryContainer = ({ children }) => {
     return (
       <VStack
-        border="1px"
-        borderColor="red"
         spacing={0}
         pb={{ base: 8, md: 12 }}
       >

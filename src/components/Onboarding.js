@@ -33,7 +33,7 @@ export default function Onboarding() {
   };
   const OnboardingContainer = ({ children }) => {
     return (
-      <Stack border="1px" borderColor="red" pb={{ base: 8, md: 12 }}>
+      <Stack pb={{ base: 8, md: 12 }}>
         {children}
       </Stack>
     );

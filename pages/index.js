@@ -6,6 +6,7 @@ import Onboarding from "../src/components/Onboarding";
 import Gallery from "../src/components/Gallery";
 import ReadyTo from "../src/components/ReadyTo";
 import Faq from "../src/components/Faq";
+import Footer from "../src/components/Footer";
 
 export default function Home() {
   return (
@@ -17,12 +18,13 @@ export default function Home() {
       </Head>
 
       <Container maxW={{ base: "90%", md: "70%" }} p={0}>
-        {/* <Navbar />
+        <Navbar />
         <Hero/>
         <Onboarding/>
         <Gallery />
-        <ReadyTo/> */}
+        <ReadyTo/>
         <Faq/>
+        <Footer/>
       </Container>
     </div>
   );
