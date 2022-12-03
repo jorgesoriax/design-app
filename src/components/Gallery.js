@@ -1,7 +1,7 @@
 import { Box, Button, HStack, Image, Stack, VStack } from "@chakra-ui/react";
 import Header from "./Header";
 import gallery from "../content/gallery.json";
-import { Cards, CirclesThreePlus } from "phosphor-react";
+import { CirclesThreePlus } from "phosphor-react";
 
 export default function Gallery() {
   const Card = ({ imageUrl, imageAlt }) => {
@@ -22,10 +22,7 @@ export default function Gallery() {
   };
   const GalleryContainer = ({ children }) => {
     return (
-      <VStack
-        spacing={0}
-        pb={{ base: 8, md: 12 }}
-      >
+      <VStack spacing={0} py={{ base: 8, md: 12 }}>
         {children}
       </VStack>
     );

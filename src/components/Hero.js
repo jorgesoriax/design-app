@@ -9,7 +9,6 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import NextImage from "next/image";
 
 export default function Hero() {
   const Content = () => {
@@ -22,11 +21,11 @@ export default function Hero() {
           h="fit-content"
         >
           <Text color="gray.500">/ Diseño Gráfico</Text>
-          <Heading fontWeight="semibold">
+          <Heading fontWeight="semibold" fontSize={{ base: 20, lg: 36 }}>
             <Highlight
               query={["Lorem ipsum", "amet consectetur"]}
               styles={{
-                fontSize: "46",
+                fontSize: { base: 36, lg: 46 },
               }}
             >
               Lorem ipsum dolor a sit amet consectetur
@@ -51,16 +50,16 @@ export default function Hero() {
     return (
       <Stack
         w={{ md: "45%" }}
-        border="1px"
-        borderColor="gray.200"
+        // border="1px"
+        // borderColor="gray.200"
         borderRadius="3xl"
         justify="center"
         align="center"
       >
         <Image
-          src="/images/hero.png"
-          boxSize={{ base: "350px", md: "450px" }}
-          fit="cover"
+          src="/images/hero.svg"
+          boxSize={{ base: "250px", md: "450px" }}
+          // fit="cover"
           alt="hero image"
         />
       </Stack>
@@ -68,12 +67,14 @@ export default function Hero() {
   };
   const HeroContainer = ({ children }) => {
     return (
-      <Stack minH="calc(100vh - 146px)">
+      <Stack minH={{ base: "fit-content", lg: "calc(100vh - 148px)" }}>
         <Stack
           justify={{ base: "center", md: "space-between" }}
           direction={{ base: "column-reverse", md: "row" }}
           align={{ base: "normal", md: "flex-end" }}
           spacing={{ base: 8 }}
+          pt={{ base: 0, md: 12 }}
+          pb={{ base: 8, md: 12 }}
         >
           {children}
         </Stack>

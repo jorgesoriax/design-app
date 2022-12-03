@@ -1,12 +1,9 @@
 import {
   Box,
   Button,
-  Flex,
-  Heading,
+  HStack,
   IconButton,
-  Link,
   Stack,
-  Text,
   useColorMode,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
@@ -53,7 +50,7 @@ export default function Navbar() {
           direction={["column", "column", "row", "row"]}
         >
           <Stack spacing={4} direction={["column", "column", "row", "row"]}>
-            {links.map(({href, title}, index) => (
+            {links.map(({ href, title }, index) => (
               <NextLink key={index} href={href} legacyBehavior passHref>
                 <Button
                   as="a"
@@ -87,7 +84,7 @@ export default function Navbar() {
   };
   const NavbarContainer = ({ children }) => {
     return (
-      <Flex
+      <HStack
         as="nav"
         align="center"
         justify="space-between"
@@ -96,7 +93,7 @@ export default function Navbar() {
         py={{ base: 8, md: 12 }}
       >
         {children}
-      </Flex>
+      </HStack>
     );
   };
 

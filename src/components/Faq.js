@@ -1,40 +1,37 @@
-import { AddIcon, MinusIcon } from "@chakra-ui/icons";
 import {
   Accordion,
   AccordionButton,
-  AccordionIcon,
   AccordionItem,
   AccordionPanel,
-  Box,
   Button,
-  HStack,
   Stack,
   Text,
   VStack,
 } from "@chakra-ui/react";
 import Header from "./Header";
 import faq from "../content/faq.json";
-import {
-  At,
-  Minus,
-  PaperPlaneTilt,
-  Plus,
-  WhatsappLogo,
-  X,
-} from "phosphor-react";
+import { Minus, PaperPlaneTilt, Plus, WhatsappLogo } from "phosphor-react";
 import NextLink from "next/link";
 
 export default function Faq() {
   const Contact = () => {
     return (
-      <Stack spacing={4} direction={{ sm: "column", md: "column", lg: "row" }}>
+      <Stack
+        spacing={4}
+        direction={{ base: "column", md: "column", lg: "row" }}
+      >
         <NextLink href="#" legacyBehavior passHref>
           <Button as="a" leftIcon={<PaperPlaneTilt size={24} weight="fill" />}>
             example.support@design.com
           </Button>
         </NextLink>
         <NextLink href="#" legacyBehavior passHref>
-          <Button as="a" target="_blank" rel="noopener noreferrer" leftIcon={<WhatsappLogo size={26} weight="fill" />}>
+          <Button
+            as="a"
+            target="_blank"
+            rel="noopener noreferrer"
+            leftIcon={<WhatsappLogo size={26} weight="fill" />}
+          >
             +52 81 1234 5678
           </Button>
         </NextLink>
@@ -43,7 +40,7 @@ export default function Faq() {
   };
   const AccordionContainer = () => {
     return (
-      <Accordion allowMultiple pb={12}>
+      <Accordion allowMultiple pb={{ base: 8, md: 12 }}>
         <VStack spacing={4}>
           {faq.map(({ question, answer }, index) => (
             <AccordionItem key={index} w="full" border={0}>
@@ -93,7 +90,7 @@ export default function Faq() {
   };
   const FaqContainer = ({ children }) => {
     return (
-      <Stack spacing={0} pb={{ base: 8, md: 12 }}>
+      <Stack spacing={0} py={{ base: 8, md: 12 }}>
         {children}
       </Stack>
     );

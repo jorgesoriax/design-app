@@ -26,7 +26,7 @@ const footer = {
         {
           title: "Quiénes somos",
           href: "#",
-        }
+        },
       ],
     },
     {

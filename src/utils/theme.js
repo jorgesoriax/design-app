@@ -40,11 +40,11 @@ const theme = extendTheme({
         md: {
           fontSize: "md",
           px: 10,
-          minH: '50px',
-          minW: '50px'
+          minH: "50px",
+          minW: "50px",
         },
       },
-    }
+    },
   },
 });
 

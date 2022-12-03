@@ -10,7 +10,7 @@ export default function ReadyTo() {
         bgSize="cover"
         justify="center"
         align="center"
-        py={14}
+        py={{ base: 8, lg: 12 }}
         borderRadius="2xl"
         spacing={8}
       >
@@ -24,7 +24,7 @@ export default function ReadyTo() {
     );
   };
   const ReadyToContainer = ({ children }) => {
-    return <Stack py={12}>{children}</Stack>;
+    return <Stack py={{ base: 8, md: 12 }}>{children}</Stack>;
   };
 
   return (

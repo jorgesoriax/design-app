@@ -1,5 +1,6 @@
 import {
   Box,
+  Flex,
   Grid,
   GridItem,
   Heading,
@@ -7,8 +8,7 @@ import {
   IconButton,
   List,
   ListItem,
-  Text,
-  VStack,
+  Stack,
 } from "@chakra-ui/react";
 import Link from "next/link";
 import NextLink from "next/link";
@@ -17,25 +17,34 @@ import footer from "../content/footer";
 export default function Footer() {
   const Utility = () => {
     return (
-      <GridItem colSpan={2}>
-        <HStack spacing={8} align="start" w="full">
-          {footer.utility.map(({ header, items }, index) => (
-            <Box key={index}>
-              <Heading as="h3" fontWeight="medium" fontSize={18}>
-                {header}
-              </Heading>
-              <List>
-                {items.map(({ title, href }, index) => (
-                  <ListItem key={index}>
-                    <NextLink href={href} legacyBehavior passHref>
-                      <Link>{title}</Link>
-                    </NextLink>
-                  </ListItem>
-                ))}
-              </List>
-            </Box>
-          ))}
-        </HStack>
+      <GridItem colSpan={{ lg: 2 }}>
+        <Flex justify={{ base: "center", lg: "left" }}>
+          <Stack
+            w={{ base: "fit-content", lg: "auto" }}
+            spacing={0}
+            gap={8}
+            align="start"
+            justify={{ base: "center", lg: "left" }}
+            direction={{ base: "column", lg: "row" }}
+          >
+            {footer.utility.map(({ header, items }, index) => (
+              <Box key={index}>
+                <Heading as="h3" fontWeight="medium" fontSize={18}>
+                  {header}
+                </Heading>
+                <List>
+                  {items.map(({ title, href }, index) => (
+                    <ListItem key={index}>
+                      <NextLink href={href} legacyBehavior passHref>
+                        <Link>{title}</Link>
+                      </NextLink>
+                    </ListItem>
+                  ))}
+                </List>
+              </Box>
+            ))}
+          </Stack>
+        </Flex>
       </GridItem>
     );
   };
@@ -44,7 +53,13 @@ export default function Footer() {
       <GridItem alignSelf="end">
         <Box color="gray.500" whiteSpace="nowrap">
           <List>
-            <HStack spacing={8}>
+            <HStack
+              spacing={0}
+              rowGap={0}
+              columnGap={8}
+              wrap="wrap"
+              justify={{ base: "center", md: "center", lg: "left" }}
+            >
               {footer.secondary.map(({ title, href }, index) => (
                 <ListItem key={index}>
                   <NextLink href={href} legacyBehavior passHref>
@@ -63,7 +78,10 @@ export default function Footer() {
       <GridItem>
         <Box>
           <List>
-            <HStack spacing={4} justify="end">
+            <HStack
+              spacing={4}
+              justify={{ base: "center", md: "center", lg: "end" }}
+            >
               {footer.socialMedia.map(({ title, href, phIcon }, index) => (
                 <ListItem key={index}>
                   <NextLink href={href} legacyBehavior passHref>
@@ -84,22 +102,30 @@ export default function Footer() {
   };
   const FooterContainer = ({ children }) => {
     return (
-      <Box
-        as="footer"
-        borderRadius="2xl"
-        border="1px"
-        borderColor="gray.200"
-        p={8}
-        my={12}
-      >
-        <Grid
-          w="full"
-          templateColumns="repeat(2, 1fr)"
-          templateRows="repeat(2)"
-          gap={8}
+      <Box as="footer" py={{ base: 8, md: 12 }}>
+        <Box
+          border="1px"
+          borderColor="gray.200"
+          borderRadius="2xl"
+          py={{ base: 8, md: 12 }}
+          px={{ base: 2, md: 8 }}
         >
-          {children}
-        </Grid>
+          <Grid
+            templateColumns={{
+              base: "auto",
+              md: "auto",
+              lg: "repeat(2, auto)",
+            }}
+            templateRows={{
+              base: "repeat(3, auto)",
+              md: "repeat(3, auto)",
+              lg: "repeat(2, auto)",
+            }}
+            gap={8}
+          >
+            {children}
+          </Grid>
+        </Box>
       </Box>
     );
   };

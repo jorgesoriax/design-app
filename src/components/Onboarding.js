@@ -17,7 +17,9 @@ export default function Onboarding() {
         >
           <Image src="/images/card.png" alt="hero image" fit="cover" />
         </Stack>
-        <Text fontWeight="medium" fontSize={18}>{title}</Text>
+        <Text fontWeight="medium" fontSize={18}>
+          {title}
+        </Text>
         <Text color="gray.500">{description}</Text>
       </VStack>
     );
@@ -33,7 +35,7 @@ export default function Onboarding() {
   };
   const OnboardingContainer = ({ children }) => {
     return (
-      <Stack pb={{ base: 8, md: 12 }}>
+      <Stack pb={{ base: 8, md: 12 }} py={{ base: 8, md: 12 }}>
         {children}
       </Stack>
     );
@@ -41,7 +43,10 @@ export default function Onboarding() {
 
   return (
     <OnboardingContainer>
-      <Header section="Tellus enim?" title="Dolor sit amet consectetur" />
+      <Header
+        section="¿Cómo consigues tu diseño?"
+        title="Dolor sit amet consectetur"
+      />
       <Steps />
     </OnboardingContainer>
   );
