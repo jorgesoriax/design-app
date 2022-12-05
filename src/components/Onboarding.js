@@ -45,7 +45,7 @@ export default function Onboarding() {
     <OnboardingContainer>
       <Header
         section="¿Cómo consigues tu diseño?"
-        title="Dolor sit amet consectetur"
+        title="Aterriza tus ideas de una manera simple"
       />
       <Steps />
     </OnboardingContainer>

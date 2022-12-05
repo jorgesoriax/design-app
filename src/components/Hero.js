@@ -20,27 +20,26 @@ export default function Hero() {
           mb={{ base: 8, md: 12 }}
           h="fit-content"
         >
-          <Text color="gray.500">/ Diseño Gráfico</Text>
-          <Heading fontWeight="semibold" fontSize={{ base: 20, lg: 36 }}>
-            <Highlight
-              query={["Lorem ipsum", "amet consectetur"]}
-              styles={{
-                fontSize: { base: 36, lg: 46 },
-              }}
-            >
-              Lorem ipsum dolor a sit amet consectetur
-            </Highlight>
+          <Heading
+            as="h1"
+            fontSize={{ base: 20, lg: 60 }}
+            lineHeight="4rem"
+            fontFamily="Literata"
+            fontWeight="normal"
+            mb={2}
+          >
+            Consigue recursos gráficos a la medida de tus proyectos
           </Heading>
           <Text color="gray.500">
-            Lorem ipsum dolor sit amet consectetur. Sed phasellus netus viverra
-            at felis tellus enim molestie. Ac id iaculis consequat odio
-            curabitur...
+            Por que compartimos tu emoción por crear, nuestros servicios de
+            diseño gráfico te acompañan paso a paso para transformar tu idea en
+            una realidad única.
           </Text>
         </VStack>
         <HStack spacing={4}>
-          <Button colorScheme="brand">Hora de crear</Button>
+          <Button colorScheme="brand">¡Comencemos a crear!</Button>
           <Button variant="outline" colorScheme="brand">
-            ¿Cómo funciona ?
+            ¿Cómo funciona?
           </Button>
         </HStack>
       </Box>
@@ -50,8 +49,6 @@ export default function Hero() {
     return (
       <Stack
         w={{ md: "45%" }}
-        // border="1px"
-        // borderColor="gray.200"
         borderRadius="3xl"
         justify="center"
         align="center"
@@ -59,7 +56,6 @@ export default function Hero() {
         <Image
           src="/images/hero.svg"
           boxSize={{ base: "250px", md: "450px" }}
-          // fit="cover"
           alt="hero image"
         />
       </Stack>

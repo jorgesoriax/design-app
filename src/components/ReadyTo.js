@@ -4,7 +4,7 @@ export default function ReadyTo() {
   const Banner = () => {
     return (
       <Stack
-        bgImage="url('/images/ready-to-2.jpg')"
+        bgImage="url('/images/ready-to.jpg')"
         bgPosition="center"
         bgRepeat="no-repeat"
         bgSize="cover"
@@ -14,8 +14,8 @@ export default function ReadyTo() {
         borderRadius="2xl"
         spacing={8}
       >
-        <Heading color="white" fontWeight="semibold">
-          ¿Qué dices, estás listx?
+        <Heading color="white" fontWeight="medium">
+         ¿Qué dices si iniciamos ya mismo?
         </Heading>
         <Button w="fit-content" color="brand.500">
           ¡Comencemos a crear!
