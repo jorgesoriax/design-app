@@ -98,7 +98,7 @@ export default function Faq() {
 
   return (
     <FaqContainer>
-      <Header section="Preguntas frecuentes" title="¿Tienes alguna duda? Busca aquí" />
+      <Header section="Preguntas frecuentes" title="Encuentra respuesta a tus dudas" />
       <AccordionContainer />
       <Contact />
     </FaqContainer>

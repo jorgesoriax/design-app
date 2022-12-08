@@ -31,13 +31,13 @@ export default function Gallery() {
   return (
     <GalleryContainer>
       <HStack w="full" justify="space-between">
-        <Header section="Galería de proyectos" title="Encuentra inspiración" />
-        <Button
+        <Header section="Galería de proyectos" title="Descubre la inspiración" />
+        {/* <Button
           colorScheme="brand"
           leftIcon={<CirclesThreePlus size={24} weight="fill" />}
         >
-          Veamos el resto
-        </Button>
+          Muestrame el resto
+        </Button> */}
       </HStack>
       <Projects />
     </GalleryContainer>

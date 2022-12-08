@@ -17,7 +17,6 @@ const theme = extendTheme({
   },
   fonts: {
     heading: `"Poppins", sans-serif`,
-    // heading: `"Literata", serif`,
     body: `"Inter", sans-serif`,
   },
   config: {

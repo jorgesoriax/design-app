@@ -4,7 +4,7 @@ export default function Header({ section, title }) {
   return (
     <VStack align="left" mb={12}>
       <Text color="gray.500">{section}</Text>
-      <Heading as="h2" fontWeight="medium">{title}</Heading>
+      <Heading as="h2" fontWeight="semibold">{title}</Heading>
     </VStack>
   );
 }

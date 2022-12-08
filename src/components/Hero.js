@@ -22,18 +22,15 @@ export default function Hero() {
         >
           <Heading
             as="h1"
-            fontSize={{ base: 20, lg: 60 }}
-            lineHeight="4rem"
-            fontFamily="Literata"
-            fontWeight="normal"
+            fontSize={{ base: 20, lg: 54 }}
+            fontWeight="semibold"
             mb={2}
           >
-            Consigue recursos gráficos a la medida de tus proyectos
+            Consigue recursos gráficos a la medida
           </Heading>
           <Text color="gray.500">
-            Por que compartimos tu emoción por crear, nuestros servicios de
-            diseño gráfico te acompañan paso a paso para transformar tu idea en
-            una realidad única.
+            Nuestros servicios de diseño gráfico te acompañan paso a paso
+            para transformar tu idea en una realidad única.
           </Text>
         </VStack>
         <HStack spacing={4}>
@@ -48,8 +45,6 @@ export default function Hero() {
   const Illustration = () => {
     return (
       <Stack
-        w={{ md: "45%" }}
-        borderRadius="3xl"
         justify="center"
         align="center"
       >

@@ -15,10 +15,10 @@ export default function ReadyTo() {
         spacing={8}
       >
         <Heading color="white" fontWeight="medium">
-         ¿Qué dices si iniciamos ya mismo?
+         Consigue tu diseño único
         </Heading>
         <Button w="fit-content" color="brand.500">
-          ¡Comencemos a crear!
+          Servicios
         </Button>
       </Stack>
     );
