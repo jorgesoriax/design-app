@@ -1,14 +1,17 @@
 [
   {
     "title": "1 Lorem ipsum",
-    "description": "Lorem ipsum dolor sit amet consectetur. Sed phasellus netus viverra at felis tellus enim molestie."
+    "description": "Lorem ipsum dolor sit amet consectetur. Sed phasellus netus viverra at felis tellus enim molestie.",
+    "image": "/static/images/card.png"
   },
   {
     "title": "2 Dolor phasellus",
-    "description": "Lorem ipsum dolor sit amet consectetur. Sed phasellus netus viverra at felis tellus enim molestie."
+    "description": "Lorem ipsum dolor sit amet consectetur. Sed phasellus netus viverra at felis tellus enim molestie.",
+    "image": "/static/images/card.png"
   },
   {
     "title": "3 Tellus netus",
-    "description": "Sed phasellus netus viverra at felis tellus enim molestie."
+    "description": "Sed phasellus netus viverra at felis tellus enim molestie.",
+    "image": "/static/images/card.png"
   }
 ]

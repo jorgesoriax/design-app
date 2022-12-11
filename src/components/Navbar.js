@@ -5,6 +5,7 @@ import {
   IconButton,
   Stack,
   useColorMode,
+  Image,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { List, Moon, Sun, X } from "phosphor-react";
@@ -80,7 +81,13 @@ export default function Navbar() {
     );
   };
   const Logo = () => {
-    return <Box w="50px" h="50px" bg="black" borderRadius="full" />;
+    return (
+      <Box>
+        <NextLink href="/">
+          <Image boxSize="50px" src="/favicon.svg" alt="Logo de lyne" />
+        </NextLink>
+      </Box>
+    );
   };
   const NavbarContainer = ({ children }) => {
     return (

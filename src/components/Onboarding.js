@@ -3,7 +3,7 @@ import onboarding from "../content/onboarding";
 import Header from "./Header";
 
 export default function Onboarding() {
-  const Card = ({ title, description }) => {
+  const Card = ({ title, description, image }) => {
     return (
       <VStack w="300px" align="left">
         <Stack
@@ -15,7 +15,7 @@ export default function Onboarding() {
           justify="center"
           align="center"
         >
-          <Image src="/images/card.png" alt="hero image" fit="cover" />
+          <Image src={image} alt="hero image" fit="cover" />
         </Stack>
         <Text fontWeight="medium" fontSize={18}>
           {title}
@@ -27,8 +27,8 @@ export default function Onboarding() {
   const Steps = () => {
     return (
       <Stack gap={8} direction="row" wrap="wrap" justify="center">
-        {onboarding.map(({ title, description }, index) => (
-          <Card key={index} title={title} description={description} />
+        {onboarding.map(({ ...onboarding }, index) => (
+          <Card key={index} {...onboarding} />
         ))}
       </Stack>
     );

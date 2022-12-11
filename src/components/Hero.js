@@ -2,7 +2,6 @@ import {
   Box,
   Button,
   Heading,
-  Highlight,
   HStack,
   Image,
   Stack,
@@ -29,8 +28,8 @@ export default function Hero() {
             Consigue recursos gráficos a la medida
           </Heading>
           <Text color="gray.500">
-            Nuestros servicios de diseño gráfico te acompañan paso a paso
-            para transformar tu idea en una realidad única.
+            Nuestros servicios de diseño gráfico te acompañan paso a paso para
+            transformar tu idea en una realidad única.
           </Text>
         </VStack>
         <HStack spacing={4}>
@@ -44,13 +43,10 @@ export default function Hero() {
   };
   const Illustration = () => {
     return (
-      <Stack
-        justify="center"
-        align="center"
-      >
+      <Stack justify="center" align="center">
         <Image
-          src="/images/hero.svg"
-          boxSize={{ base: "250px", md: "450px" }}
+          src="/static/images/hero.svg"
+          boxSize={{ base: "250px", md: "calc(calc(100vh - 146px) - 4rem)" }}
           alt="hero image"
         />
       </Stack>
@@ -58,14 +54,15 @@ export default function Hero() {
   };
   const HeroContainer = ({ children }) => {
     return (
-      <Stack minH={{ base: "fit-content", lg: "calc(100vh - 148px)" }}>
+      <Stack
+        minH={{ base: "fit-content", lg: "calc(100vh - 146px)" }}
+        pb={{ base: 8, md: 12 }}
+      >
         <Stack
           justify={{ base: "center", md: "space-between" }}
           direction={{ base: "column-reverse", md: "row" }}
           align={{ base: "normal", md: "flex-end" }}
           spacing={{ base: 8 }}
-          pt={{ base: 0, md: 12 }}
-          pb={{ base: 8, md: 12 }}
         >
           {children}
         </Stack>
