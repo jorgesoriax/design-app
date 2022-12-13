@@ -1,17 +1,17 @@
 [
   {
-    "title": "1 Lorem ipsum",
-    "description": "Lorem ipsum dolor sit amet consectetur. Sed phasellus netus viverra at felis tellus enim molestie.",
-    "image": "/static/images/card.png"
+    "title": "Briefing",
+    "description": "Comunícate con nosotros a través de Whatsapp, cuentanos sobre lo que necesitas respondiendo 3 preguntas cortas, esto nos ayudará a conocer mejor tu proyecto.",
+    "image": "/static/images/briefing.svg"
   },
   {
-    "title": "2 Dolor phasellus",
-    "description": "Lorem ipsum dolor sit amet consectetur. Sed phasellus netus viverra at felis tellus enim molestie.",
-    "image": "/static/images/card.png"
+    "title": "Diseño",
+    "description": "Una vez que apruebes el servicio, un diseñador se comunicará contigo y te acompañará durante toda la evolución de tu proyecto.",
+    "image": "/static/images/design.svg"
   },
   {
-    "title": "3 Tellus netus",
-    "description": "Sed phasellus netus viverra at felis tellus enim molestie.",
-    "image": "/static/images/card.png"
+    "title": "Entrega",
+    "description": "Nuestro trabajo no termina hasta que te encuentres satisfecho, cuando consigas tu diseño ideal todos los recursos te serán entregados, elige como editar tus recursos, Illustrator o canvas.",
+    "image": "/static/images/delivery.svg"
   }
 ]

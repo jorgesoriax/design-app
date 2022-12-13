@@ -89,6 +89,7 @@ export default function Footer() {
                       as="a"
                       target="_blank"
                       rel="noopener noreferrer"
+                      title={title}
                       icon={phIcon}
                     />
                   </NextLink>
