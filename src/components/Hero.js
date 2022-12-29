@@ -8,13 +8,16 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
+import { Confetti } from "phosphor-react";
+import LYButton from "./LYButton";
 
 export default function Hero() {
   const Content = () => {
     return (
-      <Box w={{ md: "50%" }}>
+      <Box w="100%">
         <VStack
-          align="left"
+          // align="left"
+          align="center"
           spacing={2}
           mb={{ base: 8, md: 12 }}
           h="fit-content"
@@ -22,46 +25,57 @@ export default function Hero() {
           <Heading
             as="h1"
             fontSize={{ base: 20, lg: 54 }}
-            fontWeight="semibold"
+            fontWeight="extrabold"
             mb={2}
+            textAlign="center"
           >
-            Consigue recursos gráficos a la medida
+            Save on designing for your next startup idea
           </Heading>
-          <Text color="gray.500">
+          <Text w="75%" color="gray.600" textAlign="center">
             Nuestros servicios de diseño gráfico te acompañan paso a paso para
             transformar tu idea en una realidad única.
           </Text>
         </VStack>
-        <HStack spacing={4}>
-          <Button colorScheme="brand">¡Comencemos a crear!</Button>
-          <Button variant="outline" colorScheme="brand">
+        <Stack spacing={4} justify="center" direction={{ base: "column", md: "row" }}>
+          <LYButton
+            colorScheme="brand"
+            leftIcon={<Confetti size={26} weight="fill" />}
+            fontWeight="medium"
+          >
+            ¡Comencemos a crear!
+          </LYButton>
+          <LYButton variant="outline" colorScheme="brand">
             ¿Cómo funciona?
-          </Button>
-        </HStack>
+          </LYButton>
+        </Stack>
       </Box>
     );
   };
-  const Illustration = () => {
-    return (
-      <Stack justify="center" align="center">
-        <Image
-          src="/static/images/hero.svg"
-          boxSize={{ base: "250px", md: "calc(calc(100vh - 146px) - 4rem)" }}
-          alt="hero image"
-        />
-      </Stack>
-    );
-  };
+  // const Illustration = () => {
+  //   return (
+  //     <Stack justify="center" align="center">
+  //       <Image
+          // src="/static/images/hero.svg"
+  //         boxSize={{ base: "250px", md: "calc(calc(100vh - 146px) - 4rem)" }}
+          // alt="hero image"
+  //       />
+  //     </Stack>
+  //   );
+  // };
   const HeroContainer = ({ children }) => {
     return (
       <Stack
         minH={{ base: "fit-content", lg: "calc(100vh - 146px)" }}
         pb={{ base: 8, md: 12 }}
+        justify="center"
+        align="center"
       >
         <Stack
-          justify={{ base: "center", md: "space-between" }}
-          direction={{ base: "column-reverse", md: "row" }}
-          align={{ base: "normal", md: "flex-end" }}
+          // justify={{ base: "center", md: "space-between" }}
+          // direction={{ base: "column-reverse", md: "row" }}
+          // align={{ base: "normal", md: "flex-end" }}
+          justify="center"
+          align="center"
           spacing={{ base: 8 }}
         >
           {children}
@@ -73,7 +87,7 @@ export default function Hero() {
   return (
     <HeroContainer>
       <Content />
-      <Illustration />
+      {/* <Illustration /> */}
     </HeroContainer>
   );
 }

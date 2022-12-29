@@ -1,14 +1,22 @@
 [
   {
-    "question": "Suspendisse vehicula euismod malesuada?",
+    "question": "¿Cómo puedo pedir un diseño?",
     "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas condimentum lectus, nec malesuada odio fermentum non. Proin iaculis ultrices ligula nec aliquam. "
   },
   {
-    "question": "Nunc sapien nibh, rutrum et neque at?",
+    "question": "¿En cuantó tiempo consigo mi diseño?",
     "answer": "Donec quis arcu massa. Curabitur placerat condimentum vehicula. Nullam pulvinar, urna id scelerisque vulputate, arcu eros condimentum nulla, sit amet venenatis quam ligula ornare eros."
   },
   {
-    "question": "Pellentesque posuere eros id tempor molestie?",
+    "question": "¿Cuánto cuesta?",
+    "answer": "Pellentesque et vestibulum magna. In hac habitasse platea dictumst. Maecenas suscipit magna sed placerat blandit. Nullam accumsan erat vitae ligula pellentesque, non sodales nibh gravida. Maecenas tempor nibh a ipsum viverra, ac molestie orci porta. Nullam ornare nunc id neque imperdiet gravida."
+  },
+  {
+    "question": "¿Qué recibire al finalizar el proyecto?",
+    "answer": "Pellentesque et vestibulum magna. In hac habitasse platea dictumst. Maecenas suscipit magna sed placerat blandit. Nullam accumsan erat vitae ligula pellentesque, non sodales nibh gravida. Maecenas tempor nibh a ipsum viverra, ac molestie orci porta. Nullam ornare nunc id neque imperdiet gravida."
+  },
+  {
+    "question": "¿Cómo puedo asegurarme de que mi diseño es lo que busco?",
     "answer": "Pellentesque et vestibulum magna. In hac habitasse platea dictumst. Maecenas suscipit magna sed placerat blandit. Nullam accumsan erat vitae ligula pellentesque, non sodales nibh gravida. Maecenas tempor nibh a ipsum viverra, ac molestie orci porta. Nullam ornare nunc id neque imperdiet gravida."
   }
 ]

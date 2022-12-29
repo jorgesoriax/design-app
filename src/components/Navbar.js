@@ -10,6 +10,7 @@ import {
 import NextLink from "next/link";
 import { List, Moon, Sun, X } from "phosphor-react";
 import React from "react";
+import LYButton from "./LYButton";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -26,13 +27,13 @@ export default function Navbar() {
         {!isOpen ? (
           <IconButton
             variant="ghost"
-            icon={<List size={24} weight="fill" />}
+            icon={<List size={26} weight="fill" />}
             aria-label="Open menu"
           />
         ) : (
           <IconButton
             variant="ghost"
-            icon={<X size={24} weight="fill" />}
+            icon={<X size={26} weight="fill" />}
             aria-label="Close menu"
           />
         )}
@@ -53,28 +54,28 @@ export default function Navbar() {
           <Stack spacing={4} direction={["column", "column", "row", "row"]}>
             {links.map(({ href, title }, index) => (
               <NextLink key={index} href={href} legacyBehavior passHref>
-                <Button
+                <LYButton
                   as="a"
                   variant="outline"
                   w={{ base: "full", md: "auto" }}
-                  fontWeight="medium"
                 >
                   {title}
-                </Button>
+                </LYButton>
               </NextLink>
             ))}
-            <Button colorScheme="brand">Hora de crear</Button>
-            <IconButton
+            <LYButton colorScheme="brand">Hora de crear</LYButton>
+            {/* Darkmode button */}
+            {/* <IconButton
               onClick={toggleColorMode}
               icon={
                 colorMode == "light" ? (
-                  <Moon size={24} weight="fill" />
+                  <Sun size={26} weight="fill" />
                 ) : (
-                  <Sun size={24} weight="fill" />
+                  <Moon size={26} weight="fill" />
                 )
               }
               aria-label="Toggle darkmode"
-            />
+            /> */}
           </Stack>
         </Stack>
       </Box>

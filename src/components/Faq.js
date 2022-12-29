@@ -3,15 +3,20 @@ import {
   AccordionButton,
   AccordionItem,
   AccordionPanel,
-  Button,
   Stack,
   Text,
   VStack,
 } from "@chakra-ui/react";
 import Header from "./Header";
 import faq from "../content/faq.json";
-import { Minus, PaperPlaneTilt, Plus, WhatsappLogo } from "phosphor-react";
+import {
+  EnvelopeSimple,
+  Minus,
+  Phone,
+  Plus,
+} from "phosphor-react";
 import NextLink from "next/link";
+import LYButton from "./LYButton";
 
 export default function Faq() {
   const Contact = () => {
@@ -21,19 +26,20 @@ export default function Faq() {
         direction={{ base: "column", md: "column", lg: "row" }}
       >
         <NextLink href="#" legacyBehavior passHref>
-          <Button as="a" leftIcon={<PaperPlaneTilt size={24} weight="fill" />}>
+          <LYButton as="a" leftIcon={<EnvelopeSimple size={26} weight="fill" />}  fontWeight="medium">
             example.support@design.com
-          </Button>
+          </LYButton>
         </NextLink>
         <NextLink href="#" legacyBehavior passHref>
-          <Button
+          <LYButton
             as="a"
             target="_blank"
             rel="noopener noreferrer"
-            leftIcon={<WhatsappLogo size={26} weight="fill" />}
+            leftIcon={<Phone size={26} weight="fill" />}
+            fontWeight="medium"
           >
             +52 81 1234 5678
-          </Button>
+          </LYButton>
         </NextLink>
       </Stack>
     );
@@ -65,6 +71,9 @@ export default function Faq() {
                       _groupHover={{
                         bg: "transparent",
                         color: "brand.500",
+                      }}
+                      _focus={{
+                        "-webkit-tap-highlight-color": "transparent",
                       }}
                       transition="none"
                     >
@@ -98,7 +107,10 @@ export default function Faq() {
 
   return (
     <FaqContainer>
-      <Header section="Preguntas frecuentes" title="Encuentra respuestas" />
+      <Header
+        section="Preguntas frecuentes"
+        title="Didn’t find what you were looking for?"
+      />
       <AccordionContainer />
       <Contact />
     </FaqContainer>

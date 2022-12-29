@@ -29,7 +29,7 @@ export default function Footer() {
           >
             {footer.utility.map(({ header, items }, index) => (
               <Box key={index}>
-                <Heading as="h3" fontWeight="medium" fontSize={18}>
+                <Heading as="h3" fontWeight="extrabold" fontSize={18}>
                   {header}
                 </Heading>
                 <List>

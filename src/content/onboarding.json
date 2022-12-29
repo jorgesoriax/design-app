@@ -1,17 +1,17 @@
 [
   {
-    "title": "Briefing",
-    "description": "Comunícate con nosotros a través de Whatsapp, cuentanos sobre lo que necesitas respondiendo 3 preguntas cortas, esto nos ayudará a conocer mejor tu proyecto.",
-    "image": "/static/images/briefing.svg"
+    "title": "Storytale helps creators",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit, lectus quis...",
+    "image": "/static/images/briefing.jpg"
   },
   {
-    "title": "Diseño",
-    "description": "Una vez que apruebes el servicio, un diseñador se comunicará contigo y te acompañará durante toda la evolución de tu proyecto.",
-    "image": "/static/images/design.svg"
+    "title": "A lot of graphics",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit, lectus quis...",
+    "image": "/static/images/design.jpg"
   },
   {
-    "title": "Entrega",
-    "description": "Nuestro trabajo no termina hasta que te encuentres satisfecho, cuando consigas tu diseño ideal todos los recursos te serán entregados, elige como editar tus recursos, Illustrator o canvas.",
-    "image": "/static/images/delivery.svg"
+    "title": "Get once, use forever",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit, lectus quis...",
+    "image": "/static/images/delivery.jpg"
   }
 ]

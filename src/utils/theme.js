@@ -16,8 +16,9 @@ const theme = extendTheme({
     },
   },
   fonts: {
-    heading: `"Poppins", sans-serif`,
-    body: `"Inter", sans-serif`,
+    // heading: `"Poppins", sans-serif`,
+    heading: `"Nunito", sans-serif`,
+    body: `"Poppins", sans-serif`,
   },
   config: {
     initialColorMode: "system",
@@ -26,7 +27,8 @@ const theme = extendTheme({
   styles: {
     global: (props) => ({
       "html, body": {
-        color: props.colorMode === "dark" ? "white" : "gray.700",
+        color: props.colorMode === "dark" ? "white" : "gray.800",
+        fontSize: 16
       },
     }),
   },
