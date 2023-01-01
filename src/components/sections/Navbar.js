@@ -1,25 +1,21 @@
+import React from "react";
+import NextLink from "next/link";
 import {
   Box,
-  Button,
   HStack,
   IconButton,
   Stack,
   useColorMode,
   Image,
 } from "@chakra-ui/react";
-import NextLink from "next/link";
 import { List, Moon, Sun, X } from "phosphor-react";
-import React from "react";
-import LYButton from "./LYButton";
+import data from "../../data/navbar.json";
+import { LYButton, LYLinkButton } from "../Lyne";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
   const toggle = () => setIsOpen(!isOpen);
   const { colorMode, toggleColorMode } = useColorMode();
-  const links = [
-    { title: "Inspiración", href: "#" },
-    { title: "Blog", href: "#" },
-  ];
 
   const MenuToggle = ({ toggle, isOpen }) => {
     return (
@@ -52,19 +48,18 @@ export default function Navbar() {
           direction={["column", "column", "row", "row"]}
         >
           <Stack spacing={4} direction={["column", "column", "row", "row"]}>
-            {links.map(({ href, title }, index) => (
-              <NextLink key={index} href={href} legacyBehavior passHref>
-                <LYButton
-                  as="a"
-                  variant="outline"
+            {data.links.map(({ href, title }, index) => (
+              <Box key={index}>
+                <LYLinkButton
                   w={{ base: "full", md: "auto" }}
+                  href={href}
+                  variant="outline"
                 >
                   {title}
-                </LYButton>
-              </NextLink>
+                </LYLinkButton>
+              </Box>
             ))}
-            <LYButton colorScheme="brand">Hora de crear</LYButton>
-            {/* Darkmode button */}
+            <LYButton colorScheme="brand">{data.ctaButton}</LYButton>
             {/* <IconButton
               onClick={toggleColorMode}
               icon={
@@ -85,7 +80,7 @@ export default function Navbar() {
     return (
       <Box>
         <NextLink href="/">
-          <Image boxSize="50px" src="/favicon.svg" alt="Logo de lyne" />
+          <Image boxSize="50px" src="/favicon.svg" alt="Símbolo de Lyne" />
         </NextLink>
       </Box>
     );

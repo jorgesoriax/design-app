@@ -1,0 +1,26 @@
+{
+  "cards": [
+    {
+      "title": "Storytale helps creators",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit, lectus quis...",
+      "image": "/static/images/onboarding-step-1.png",
+      "alt": "Ilustración de globos de diálogo"
+    },
+    {
+      "title": "A lot of graphics",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit, lectus quis...",
+      "image": "/static/images/onboarding-step-2.png",
+      "alt": "Ilustración de pluma de diseño gráfico"
+    },
+    {
+      "title": "Get once, use forever",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit, lectus quis...",
+      "image": "/static/images/onboarding-step-3.png",
+      "alt": "Ilustración de entrega de recursos "
+    }
+  ],
+  "header": {
+    "section": "¿Cómo consigues tu diseño?",
+    "title": "Aterriza tus ideas de una manera simple"
+  }
+}

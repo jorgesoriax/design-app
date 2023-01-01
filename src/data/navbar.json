@@ -1,0 +1,17 @@
+{
+  "links": [
+    {
+      "title": "option-1",
+      "href": "#"
+    },
+    {
+      "title": "option-2",
+      "href": "#"
+    },
+    {
+      "title": "option-3",
+      "href": "#"
+    }
+  ],
+  "ctaButton": "CTA"
+}

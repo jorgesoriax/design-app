@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 import NextLink from "next/link";
-import footer from "../content/footer";
+import data from "../../data/footer";
 
 export default function Footer() {
   const Utility = () => {
@@ -20,16 +20,16 @@ export default function Footer() {
       <GridItem colSpan={{ lg: 2 }}>
         <Flex justify={{ base: "center", lg: "left" }}>
           <Stack
-            w={{ base: "fit-content", lg: "auto" }}
-            spacing={0}
-            gap={8}
             align="start"
             justify={{ base: "center", lg: "left" }}
             direction={{ base: "column", lg: "row" }}
+            gap={8}
+            spacing={0}
+            w={{ base: "fit-content", lg: "auto" }}
           >
-            {footer.utility.map(({ header, items }, index) => (
+            {data.utility.map(({ header, items }, index) => (
               <Box key={index}>
-                <Heading as="h3" fontWeight="extrabold" fontSize={18}>
+                <Heading as="h4" fontSize={18} fontWeight="extrabold">
                   {header}
                 </Heading>
                 <List>
@@ -54,13 +54,13 @@ export default function Footer() {
         <Box color="gray.500" whiteSpace="nowrap">
           <List>
             <HStack
-              spacing={0}
+              justify={{ base: "center", md: "center", lg: "left" }}
               rowGap={0}
               columnGap={8}
+              spacing={0}
               wrap="wrap"
-              justify={{ base: "center", md: "center", lg: "left" }}
             >
-              {footer.secondary.map(({ title, href }, index) => (
+              {data.secondary.map(({ title, href }, index) => (
                 <ListItem key={index}>
                   <NextLink href={href} legacyBehavior passHref>
                     <Link>{title}</Link>
@@ -82,7 +82,7 @@ export default function Footer() {
               spacing={4}
               justify={{ base: "center", md: "center", lg: "end" }}
             >
-              {footer.socialMedia.map(({ title, href, phIcon }, index) => (
+              {data.socialMedia.map(({ title, href, phIcon }, index) => (
                 <ListItem key={index}>
                   <NextLink href={href} legacyBehavior passHref>
                     <IconButton
@@ -112,6 +112,7 @@ export default function Footer() {
           px={{ base: 2, md: 8 }}
         >
           <Grid
+            gap={8}
             templateColumns={{
               base: "auto",
               md: "auto",
@@ -122,7 +123,6 @@ export default function Footer() {
               md: "repeat(3, auto)",
               lg: "repeat(2, auto)",
             }}
-            gap={8}
           >
             {children}
           </Grid>

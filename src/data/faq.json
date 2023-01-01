@@ -1,0 +1,28 @@
+{
+  "faq": [
+    {
+      "question": "¿Cómo puedo pedir un diseño?",
+      "answer": "En 3 simples pasos, cuéntanos sobre tu proyecto, recibe una cotización y una vez que lo aceptes y el diseño sea lo que necesitas, descargas los recursos de tu proyecto listos para usar."
+    },
+    {
+      "question": "¿En cuantó tiempo consigo mi diseño?",
+      "answer": "Donec quis arcu massa. Curabitur placerat condimentum vehicula. Nullam pulvinar, urna id scelerisque vulputate, arcu eros condimentum nulla, sit amet venenatis quam ligula ornare eros."
+    },
+    {
+      "question": "¿Cuánto cuesta? ",
+      "answer": "El costo de cada servicio varía según la complejidad y urgencia de tu proyecto, consulta todos los precios en el siguiente enlace."
+    },
+    {
+      "question": "¿Qué recibire al finalizar el proyecto?",
+      "answer": "Según lo necesites, se te entregarán recursos en formato PNG, JPG, WEBP o SVG, editables en Canva, Photoshop o Illustrator y formatos en RGB para proyectos digitales y CMYK para proyectos de impresión."
+    },
+    {
+      "question": "¿Cómo puedo asegurarme de que mi diseño es lo que busco?",
+      "answer": "Durante el desarrollo de tu proyecto, cuentas con hasta 3 revisiones para hacer cambios y correcciones a tu diseño."
+    }
+  ],
+  "header": {
+    "section": "Preguntas frecuentes",
+    "title": "Didn’t find what you were looking for?"
+  }
+}

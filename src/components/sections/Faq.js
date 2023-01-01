@@ -7,16 +7,11 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import Header from "./Header";
-import faq from "../content/faq.json";
-import {
-  EnvelopeSimple,
-  Minus,
-  Phone,
-  Plus,
-} from "phosphor-react";
-import NextLink from "next/link";
-import LYButton from "./LYButton";
+import { EnvelopeSimple, Minus, Phone, Plus } from "phosphor-react";
+import data from "../../data/faq.json";
+import contact from "../../data/contact.json";
+import Header from "../Header";
+import { LYLinkButton } from "../Lyne";
 
 export default function Faq() {
   const Contact = () => {
@@ -25,31 +20,29 @@ export default function Faq() {
         spacing={4}
         direction={{ base: "column", md: "column", lg: "row" }}
       >
-        <NextLink href="#" legacyBehavior passHref>
-          <LYButton as="a" leftIcon={<EnvelopeSimple size={26} weight="fill" />}  fontWeight="medium">
-            example.support@design.com
-          </LYButton>
-        </NextLink>
-        <NextLink href="#" legacyBehavior passHref>
-          <LYButton
-            as="a"
-            target="_blank"
-            rel="noopener noreferrer"
-            leftIcon={<Phone size={26} weight="fill" />}
-            fontWeight="medium"
-          >
-            +52 81 1234 5678
-          </LYButton>
-        </NextLink>
+        <LYLinkButton
+          href="#"
+          leftIcon={<EnvelopeSimple size={26} weight="fill" />}
+        >
+          {contact.email}
+        </LYLinkButton>
+        <LYLinkButton
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          leftIcon={<Phone size={26} weight="fill" />}
+        >
+          {contact.number}
+        </LYLinkButton>
       </Stack>
     );
   };
   const AccordionContainer = () => {
     return (
-      <Accordion allowMultiple pb={{ base: 8, md: 12 }}>
+      <Accordion pb={{ base: 8, md: 12 }} allowMultiple>
         <VStack spacing={4}>
-          {faq.map(({ question, answer }, index) => (
-            <AccordionItem key={index} w="full" border={0}>
+          {data.faq.map(({ question, answer }, index) => (
+            <AccordionItem key={index} border={0} w="full">
               {({ isExpanded }) => (
                 <Stack
                   spacing={0}
@@ -57,13 +50,14 @@ export default function Faq() {
                   py={2}
                   px={4}
                   bg={isExpanded ? "gray.100" : ""}
+                  role="group"
                   _hover={{
                     bg: "brand.50",
                   }}
-                  role="group"
                 >
-                  <h2>
+                  <h3>
                     <AccordionButton
+                      transition="none"
                       _hover={{
                         bg: "transparent",
                         color: "brand.500",
@@ -73,21 +67,20 @@ export default function Faq() {
                         color: "brand.500",
                       }}
                       _focus={{
-                        "-webkit-tap-highlight-color": "transparent",
+                        WebkitTapHighlightColor: "transparent",
                       }}
-                      transition="none"
                     >
                       <Text
                         flex={1}
-                        textAlign="left"
-                        fontWeight="medium"
                         fontSize={18}
+                        fontWeight="medium"
+                        textAlign="left"
                       >
                         {question}
                       </Text>
                       {isExpanded ? <Minus size={24} /> : <Plus size={24} />}
                     </AccordionButton>
-                  </h2>
+                  </h3>
                   <AccordionPanel color="gray.500">{answer}</AccordionPanel>
                 </Stack>
               )}
@@ -99,7 +92,7 @@ export default function Faq() {
   };
   const FaqContainer = ({ children }) => {
     return (
-      <Stack spacing={0} py={{ base: 8, md: 12 }}>
+      <Stack as="section" spacing={0} py={{ base: 8, md: 12 }}>
         {children}
       </Stack>
     );
@@ -107,10 +100,7 @@ export default function Faq() {
 
   return (
     <FaqContainer>
-      <Header
-        section="Preguntas frecuentes"
-        title="Didn’t find what you were looking for?"
-      />
+      <Header section={data.header.section} title={data.header.title} />
       <AccordionContainer />
       <Contact />
     </FaqContainer>
