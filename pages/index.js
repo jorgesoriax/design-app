@@ -3,7 +3,7 @@ import { Container } from "@chakra-ui/react";
 import Navbar from "../src/components/sections/Navbar";
 import Hero from "../src/components/sections/Hero";
 import Onboarding from "../src/components/sections/Onboarding";
-import Gallery from "../src/components/sections/Gallery";
+import Projects from "../src/components/sections/Projects";
 import ReadyTo from "../src/components/sections/ReadyTo";
 import Faq from "../src/components/sections/Faq";
 import Footer from "../src/components/sections/Footer";
@@ -25,7 +25,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <Onboarding />
-        <Gallery />
+        <Projects />
         <ReadyTo />
         <Faq />
         <Footer />
