@@ -8,30 +8,19 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { EnvelopeSimple, Minus, Phone, Plus } from "phosphor-react";
-import data from "../../data/faq.json";
 import contact from "../../data/contact.json";
 import Header from "../Header";
-import { LYLinkButton } from "../Lyne";
+import LYLinkButton from "../LYLinkButton";
 
-export default function Faq() {
+export default function FAQ({ data }) {
   const Contact = () => {
     return (
       <Stack
         spacing={4}
         direction={{ base: "column", md: "column", lg: "row" }}
       >
-        <LYLinkButton
-          href="#"
-          leftIcon={<EnvelopeSimple size={26} weight="fill" />}
-        >
-          {contact.email}
-        </LYLinkButton>
-        <LYLinkButton
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          leftIcon={<Phone size={26} weight="fill" />}
-        >
+        <LYLinkButton href="#">{contact.email}</LYLinkButton>
+        <LYLinkButton href="#" target="_blank" rel="noopener noreferrer">
           {contact.number}
         </LYLinkButton>
       </Stack>
@@ -48,7 +37,7 @@ export default function Faq() {
                   spacing={0}
                   borderRadius="2xl"
                   py={2}
-                  px={4}
+                  px={{ base: 2, lg: 4 }}
                   bg={isExpanded ? "gray.100" : ""}
                   role="group"
                   _hover={{
@@ -90,19 +79,15 @@ export default function Faq() {
       </Accordion>
     );
   };
-  const FaqContainer = ({ children }) => {
-    return (
-      <Stack as="section" spacing={0} py={{ base: 8, md: 12 }}>
-        {children}
-      </Stack>
-    );
+  const FAQContainer = ({ children }) => {
+    return <Stack as="section">{children}</Stack>;
   };
 
   return (
-    <FaqContainer>
-      <Header section={data.header.section} title={data.header.title} />
+    <FAQContainer>
+      <Header title={data.header.title} description={data.header.description} />
       <AccordionContainer />
       <Contact />
-    </FaqContainer>
+    </FAQContainer>
   );
 }

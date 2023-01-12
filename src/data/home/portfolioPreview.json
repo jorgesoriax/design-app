@@ -1,0 +1,25 @@
+{
+  "header": {
+    "section": "Portafolio",
+    "title": "Descubre la inspiración",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit, lectus quis..."
+  },
+  "ctaButton": "Veamos el resto",
+  "carouselImages": [
+    {
+      "url": "/static/images/carousel-temp-1.jpg",
+      "alt": "image_1_alt",
+      "category": "category_1"
+    },
+    {
+      "url": "/static/images/carousel-temp-2.jpg",
+      "alt": "image_2_alt",
+      "category": "category_2"
+    },
+    {
+      "url": "/static/images/carousel-temp-3.jpg",
+      "alt": "image_3_alt",
+      "category": "category_3"
+    }
+  ]
+}

@@ -1,17 +1,12 @@
 {
   "links": [
     {
-      "title": "option-1",
-      "href": "#"
-    },
-    {
-      "title": "option-2",
-      "href": "#"
-    },
-    {
-      "title": "option-3",
-      "href": "#"
+      "title": "Inspiración",
+      "href": "/portfolio"
     }
   ],
-  "ctaButton": "CTA"
+  "ctaButton": {
+    "title": "Comenzar a crear",
+    "href": "/services"
+  }
 }

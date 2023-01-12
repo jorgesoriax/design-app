@@ -1,12 +1,18 @@
 import Head from "next/head";
-import { Container } from "@chakra-ui/react";
-import Navbar from "../src/components/sections/Navbar";
-import Hero from "../src/components/sections/Hero";
+import LYContainer from "../src/components/LYContainer";
+import Navbar from "../src/components/Navbar";
+import Footer from "../src/components/Footer";
+import { HeroWithBackground } from "../src/components/Hero";
+import heroData from "../src/data/home/hero.json";
 import Onboarding from "../src/components/sections/Onboarding";
-import Projects from "../src/components/sections/Projects";
-import ReadyTo from "../src/components/sections/ReadyTo";
-import Faq from "../src/components/sections/Faq";
-import Footer from "../src/components/sections/Footer";
+import onboardingData from "../src/data/home/onboarding.json";
+import { Text, VStack } from "@chakra-ui/react";
+import PortfolioPreview from "../src/components/sections/PortfolioPreview";
+import portfolioPreviewData from "../src/data/home/portfolioPreview.json";
+import FAQ from "../src/components/sections/FAQ";
+import faqData from "../src/data/home/faq.json";
+import Banner from "../src/components/Banner";
+import bannerData from "../src/data/home/banner.json";
 
 export default function Home() {
   return (
@@ -21,15 +27,20 @@ export default function Home() {
         {/* <link rel="manifest" href="/manifest.json"/> */}
       </Head>
 
-      <Container maxW={{ base: "90%", lg: "70%" }} p={0}>
-        <Navbar />
-        <Hero />
-        <Onboarding />
-        <Projects />
-        <ReadyTo />
-        <Faq />
+      <LYContainer>
+        <VStack spacing={0}>
+          <Navbar />
+          <HeroWithBackground
+            data={heroData}
+            h={{ base: "fit-content", lg: "calc(100vh - 146px)" }}
+          />
+        </VStack>
+        <Onboarding data={onboardingData} />
+        <PortfolioPreview data={portfolioPreviewData} />
+        <Banner data={bannerData} />
+        <FAQ data={faqData} />
         <Footer />
-      </Container>
+      </LYContainer>
     </div>
   );
 }

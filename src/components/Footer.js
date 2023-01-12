@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 import NextLink from "next/link";
-import data from "../../data/footer";
+import data from "../data/footer";
 
 export default function Footer() {
   const Utility = () => {
@@ -103,7 +103,7 @@ export default function Footer() {
   };
   const FooterContainer = ({ children }) => {
     return (
-      <Box as="footer" py={{ base: 8, md: 12 }}>
+      <Box as="footer">
         <Box
           border="1px"
           borderColor="gray.200"

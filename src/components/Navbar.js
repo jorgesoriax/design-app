@@ -9,8 +9,9 @@ import {
   Image,
 } from "@chakra-ui/react";
 import { List, Moon, Sun, X } from "phosphor-react";
-import data from "../../data/navbar.json";
-import { LYButton, LYLinkButton } from "../Lyne";
+import data from "../data/navbar.json";
+import LYLinkButton from "./LYLinkButton";
+import LYButton from "./LYButton";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -23,13 +24,13 @@ export default function Navbar() {
         {!isOpen ? (
           <IconButton
             variant="ghost"
-            icon={<List size={26} weight="fill" />}
+            icon={<List size={32} weight="fill" />}
             aria-label="Open menu"
           />
         ) : (
           <IconButton
             variant="ghost"
-            icon={<X size={26} weight="fill" />}
+            icon={<X size={32} weight="fill" />}
             aria-label="Close menu"
           />
         )}
@@ -59,7 +60,9 @@ export default function Navbar() {
                 </LYLinkButton>
               </Box>
             ))}
-            <LYButton colorScheme="brand">{data.ctaButton}</LYButton>
+            <LYLinkButton href={data.ctaButton.href} colorScheme="brand">
+              {data.ctaButton.title}
+            </LYLinkButton>
             {/* <IconButton
               onClick={toggleColorMode}
               icon={
@@ -93,7 +96,7 @@ export default function Navbar() {
         justify="space-between"
         wrap="wrap"
         w="100%"
-        py={{ base: 8, md: 12 }}
+        py={12}
       >
         {children}
       </HStack>

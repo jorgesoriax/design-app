@@ -16,12 +16,12 @@ const theme = extendTheme({
     },
   },
   fonts: {
-    // heading: `"Poppins", sans-serif`,
-    heading: `"Nunito", sans-serif`,
+    // heading: `"Nunito", sans-serif`,
+    heading: `"Merriweather", sans-serif`,
     body: `"Poppins", sans-serif`,
   },
   config: {
-    initialColorMode: "system",
+    initialColorMode: "light",
     useSystemColorMode: false,
   },
   styles: {

@@ -3,19 +3,18 @@ import Image from "next/image";
 import { Box, Stack, Text, IconButton, HStack } from "@chakra-ui/react";
 import { Aperture, CaretLeft, CaretRight } from "phosphor-react";
 
-
-export default function Carousel({ images }) {
+export default function Carousel({ data }) {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
-  const selectNexIndex = (index, images, next = true) => {
-    const condition = next ? index < images.length - 1 : index > 0;
+  const selectNextIndex = (index, data, next = true) => {
+    const condition = next ? index < data.length - 1 : index > 0;
     const nextIndex = next
       ? condition
         ? selectedIndex + 1
         : 0
       : condition
-        ? selectedIndex - 1
-        : images.length - 1;
+      ? selectedIndex - 1
+      : data.length - 1;
 
     setSelectedIndex(nextIndex);
   };
@@ -24,27 +23,29 @@ export default function Carousel({ images }) {
       <Box pos="absolute" left={4} bottom={4}>
         <IconButton
           variant="solid"
-          icon={<Aperture size={26} weight="fill" />}
+          icon={<Aperture size={32} weight="fill" />}
           aria-label="Tipo de servicio"
         />
       </Box>
     );
   };
   const ItemIndicator = () => {
+    const active = {
+      w: "50px",
+    };
+
     return (
-      <Box pos="absolute" right={4} top={4}>
-        <Stack
-          align="center"
-          justify="center"
-          borderRadius="full"
-          boxSize="50px"
-          bg="white"
-        >
-          <Text fontSize={14} fontWeight="medium">
-            {selectedIndex + 1} / {images.length}
-          </Text>
-        </Stack>
-      </Box>
+      <HStack pos="absolute" right={4} top={4}>
+        {data.map((item, index) => (
+          <Box
+            key={index}
+            borderRadius="full"
+            w={index == selectedIndex ? "32px" : "10px"}
+            h="10px"
+            bg="white"
+          ></Box>
+        ))}
+      </HStack>
     );
   };
   const Controls = () => {
@@ -53,16 +54,16 @@ export default function Carousel({ images }) {
         <IconButton
           variant="solid"
           colorScheme="brand"
-          icon={<CaretLeft size={26} weight="fill" />}
+          icon={<CaretLeft size={32} weight="fill" />}
           aria-label="Previous image"
-          onClick={() => selectNexIndex(selectedIndex, images, false)}
+          onClick={() => selectNextIndex(selectedIndex, data, false)}
         />
         <IconButton
           variant="solid"
           colorScheme="brand"
-          icon={<CaretRight size={26} weight="fill" />}
+          icon={<CaretRight size={32} weight="fill" />}
           aria-label="Next image"
-          onClick={() => selectNexIndex(selectedIndex, images)}
+          onClick={() => selectNextIndex(selectedIndex, data)}
         />
       </HStack>
     );
@@ -73,15 +74,13 @@ export default function Carousel({ images }) {
         pos="relative"
         spacing={0}
         overflow="hidden"
-        border="1px"
-        borderColor="gray.200"
-        borderRadius="2.5rem"
+        borderRadius="2xl"
         w="100%"
-        h="500px"
+        h={{base: "60vh", lg: "70vh"}}
       >
         <Image
-          src={images[selectedIndex].url}
-          alt={images[selectedIndex].alt}
+          src={data[selectedIndex].url}
+          alt={data[selectedIndex].alt}
           fill
           style={{
             objectFit: "cover",

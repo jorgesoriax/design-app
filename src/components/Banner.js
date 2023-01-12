@@ -1,9 +1,8 @@
 import Image from "next/image";
 import { Heading, Stack, Text, VStack } from "@chakra-ui/react";
-import data from "../../data/readyto.json";
-import { LYButton } from "../Lyne";
+import LYButton from "./LYButton";
 
-export default function ReadyTo() {
+export default function ReadyTo({ data }) {
   const Banner = () => {
     return (
       <Stack
@@ -20,7 +19,6 @@ export default function ReadyTo() {
           src={data.image}
           alt={data.alt}
           fill
-          sizes="100%"
           style={{
             objectFit: "cover",
             zIndex: "-1",
@@ -39,11 +37,7 @@ export default function ReadyTo() {
     );
   };
   const ReadyToContainer = ({ children }) => {
-    return (
-      <Stack as="section" py={{ base: 8, md: 12 }}>
-        {children}
-      </Stack>
-    );
+    return <Stack as="section">{children}</Stack>;
   };
 
   return (

@@ -1,9 +1,8 @@
 import Image from "next/image";
 import { Heading, Stack, Text, VStack } from "@chakra-ui/react";
-import data from "../../data/onboarding";
 import Header from "../Header";
 
-export default function Onboarding() {
+export default function Onboarding({ data }) {
   const Card = ({ title, description, image, alt }) => {
     return (
       <VStack
@@ -13,20 +12,21 @@ export default function Onboarding() {
         border="1px"
         borderColor="gray.200"
         borderRadius="2xl"
-        w={{ base: "100%", md: "300px" }}
+        w={{ base: "100%", md: "30%" }}
+        minW="250px"
         p={{ base: 4, md: 6 }}
       >
         <Stack
           position="relative"
           align="center"
           justify="center"
-          boxSize={{ base: "200px", lg: "300px" }}
+          boxSize={{ base: "150px", md: "250px" }}
         >
           <Image
             src={image}
             alt={alt}
+            sizes="100%"
             fill
-            sizes="300px"
             style={{
               objectFit: "contain",
             }}
@@ -51,15 +51,15 @@ export default function Onboarding() {
   const Steps = () => {
     return (
       <Stack spacing={0} justify="center" gap={8} direction="row" wrap="wrap">
-        {data.cards.map(({ ...onboarding }, index) => (
-          <Card key={index} {...onboarding} />
+        {data.cards.map(({ ...data }, index) => (
+          <Card key={index} {...data} />
         ))}
       </Stack>
     );
   };
   const OnboardingContainer = ({ children }) => {
     return (
-      <Stack as="section" py={{ base: 8, md: 12 }}>
+      <Stack as="section" spacing={0}>
         {children}
       </Stack>
     );
@@ -67,7 +67,7 @@ export default function Onboarding() {
 
   return (
     <OnboardingContainer>
-      <Header section={data.header.section} title={data.header.title} />
+      <Header title={data.header.title} description={data.header.description} />
       <Steps />
     </OnboardingContainer>
   );
