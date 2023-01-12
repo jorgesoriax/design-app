@@ -4,7 +4,10 @@
     "title": "Descubre la inspiración",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit, lectus quis..."
   },
-  "ctaButton": "Veamos el resto",
+  "ctaButton": {
+    "title": "Veamos más",
+    "href": "/portfolio"
+  },
   "carouselImages": [
     {
       "url": "/static/images/carousel-temp-1.jpg",

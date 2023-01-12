@@ -1,8 +1,8 @@
 import Head from "next/head";
 import { Container, Text } from "@chakra-ui/react";
-import { LYContainer } from "../src/components/Lyne";
 import Navbar from "../src/components/Navbar";
 import Footer from "../src/components/Footer";
+import LYContainer from "../src/components/LYContainer"
 
 export default function Services() {
   return (

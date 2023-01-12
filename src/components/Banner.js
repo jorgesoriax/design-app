@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Heading, Stack, Text, VStack } from "@chakra-ui/react";
-import LYButton from "./LYButton";
+import LYLinkButton from "./LYLinkButton";
 
 export default function ReadyTo({ data }) {
   const Banner = () => {
@@ -30,9 +30,9 @@ export default function ReadyTo({ data }) {
           </Heading>
           <Text color="white">{data.description}</Text>
         </VStack>
-        <LYButton w="fit-content" color="brand.500">
-          {data.ctaButton}
-        </LYButton>
+        <LYLinkButton href={data.ctaButton.href} w="fit-content" color="brand.500">
+          {data.ctaButton.title}
+        </LYLinkButton>
       </Stack>
     );
   };

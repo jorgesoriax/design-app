@@ -17,11 +17,11 @@ export default function PortfolioPreview({ data }) {
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit, lectus quis..."
         />
         <LYLinkButton
-          href="#"
+          href={data.ctaButton.href}
           colorScheme="brand"
           rightIcon={<ArrowCircleUpRight size={32} weight="fill" />}
         >
-          Veamos más
+          {data.ctaButton.title}
         </LYLinkButton>
       </Stack>
     );

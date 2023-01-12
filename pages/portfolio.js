@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Text } from "@chakra-ui/react";
 import Navbar from "../src/components/Navbar";
 import Footer from "../src/components/Footer";
-import { LYContainer } from "../src/components/Lyne";
+import LYContainer from "../src/components/LYContainer"
 
 export default function Services() {
   return (
@@ -19,7 +19,6 @@ export default function Services() {
 
       <LYContainer>
         <Navbar />
-        <Text>Hola, estas en mi Portafolio</Text>
         <Footer />
       </LYContainer>
     </div>
