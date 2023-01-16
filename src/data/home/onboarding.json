@@ -1,26 +1,26 @@
 {
+  "header": {
+    "title": "Haz realidad tus ideas de una manera simple",
+    "description": "Consigue tu diseño en 3 simples fases que te llevarán de solo contar con una idea a aterrizarla y despegarla efectivamente. Si durante cualquier fase te surgen dudas puedes probar consultar el área de preguntas frecuentes o contáctarnos directamente."
+  },
   "cards": [
     {
-      "title": "Storytale helps creators",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit, lectus quis...",
+      "title": "Aterriza tus ideas",
+      "description": "Contáctanos por WhatsApp y responde un breve cuestionario para recibir una cotización y realizar una solicitud de servicio.",
       "image": "/static/images/onboarding-step-1.png",
-      "alt": "Ilustración de globos de diálogo"
+      "alt": "Ilustración de globos de diálogo e ideas"
     },
     {
-      "title": "A lot of graphics",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit, lectus quis...",
+      "title": "Crea junto a nosotros",
+      "description": "Una vez que recibamos tu solicitud y sea aprobada, comenzaremos a diseñar, puedes supervisar este proceso usando tus revisiones.",
       "image": "/static/images/onboarding-step-2.png",
-      "alt": "Ilustración de pluma de diseño gráfico"
+      "alt": "Ilustración de una herramienta pluma de diseño"
     },
     {
-      "title": "Get once, use forever",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit, lectus quis...",
+      "title": "Recibe tu diseño",
+      "description": "Cuándo estes satisfecho o satisfecha con nuestra propuesta, se te entregarán todos tus recursos listos para ser usados.",
       "image": "/static/images/onboarding-step-3.png",
-      "alt": "Ilustración de entrega de recursos "
+      "alt": "Ilustración de recursos en diferentes formatos"
     }
-  ],
-  "header": {
-    "title": "Aterriza tus ideas de una manera simple",
-    "description": "¿Cómo consigues tu diseño?"
-  }
+  ]
 }

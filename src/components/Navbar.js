@@ -96,7 +96,7 @@ export default function Navbar() {
         justify="space-between"
         wrap="wrap"
         w="100%"
-        py={12}
+        py={{base: 6, md: 12}}
       >
         {children}
       </HStack>

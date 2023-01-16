@@ -1,12 +1,12 @@
 {
-  "title": "Save on designing for your next startup idea",
-  "description": "Nuestros servicios de diseño gráfico te acompañan paso a paso para transformar tu idea en una realidad única.",
+  "title": "Transmite tus ideas efectivamente",
+  "description": "Enriquece el mensaje que deseas comunicar al mundo utilizando recursos graficos creados a la medida de tu proyecto o negocio.",
   "ctaButton": {
-    "title": "¡Consigue tu diseño!",
+    "title": "¡Hora de crear!",
     "href": "/services"
   },
   "secondaryButton": {
     "title": "¿Cómo funciona?",
-    "href": "#how-to"
+    "href": "onboarding"
   }
 }

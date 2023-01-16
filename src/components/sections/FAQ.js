@@ -80,7 +80,7 @@ export default function FAQ({ data }) {
     );
   };
   const FAQContainer = ({ children }) => {
-    return <Stack as="section">{children}</Stack>;
+    return <Stack as="section" id="faq">{children}</Stack>;
   };
 
   return (

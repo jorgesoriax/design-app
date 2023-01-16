@@ -28,7 +28,7 @@ export default function PortfolioPreview({ data }) {
   };
   const PortfolioPreviewContainer = ({ children }) => {
     return (
-      <VStack as="section" spacing={{ base: 8, lg: 0 }}>
+      <VStack as="section" id="portfolio-preview" spacing={{ base: 8, lg: 0 }}>
         {children}
       </VStack>
     );

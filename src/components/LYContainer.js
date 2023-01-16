@@ -5,7 +5,7 @@ export default function LYContainer({ children, ...props }) {
     <Container
       {...props}
       maxW={{ base: "100%", md: "80%" }}
-      p={{ base: 6, md: 0 }}
+      px={{ base: 6, md: 0 }}
       pb={{ base: 6, md: 12 }}
     >
       <Stack spacing={{ base: 16, md: 32 }}>{children}</Stack>

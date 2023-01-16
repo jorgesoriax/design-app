@@ -59,7 +59,7 @@ export default function Onboarding({ data }) {
   };
   const OnboardingContainer = ({ children }) => {
     return (
-      <Stack as="section" spacing={0}>
+      <Stack as="section" id="onboarding" spacing={0}>
         {children}
       </Stack>
     );

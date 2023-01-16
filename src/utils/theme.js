@@ -1,4 +1,4 @@
-import { extendTheme } from "@chakra-ui/react";
+import { extendTheme, useMediaQuery } from "@chakra-ui/react";
 
 const theme = extendTheme({
   colors: {
@@ -16,7 +16,6 @@ const theme = extendTheme({
     },
   },
   fonts: {
-    // heading: `"Nunito", sans-serif`,
     heading: `"Merriweather", sans-serif`,
     body: `"Poppins", sans-serif`,
   },
@@ -28,7 +27,10 @@ const theme = extendTheme({
     global: (props) => ({
       "html, body": {
         color: props.colorMode === "dark" ? "white" : "gray.800",
-        fontSize: 16
+        fontSize: 16,
+      },
+      html: {
+        scrollBehavior: "smooth",
       },
     }),
   },
