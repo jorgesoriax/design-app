@@ -1,8 +1,8 @@
 {
   "header": {
     "section": "Portafolio",
-    "title": "Descubre la inspiración",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit, lectus quis..."
+    "title": "Encuentra inspiración",
+    "description": "Hecha un vistazo a nuestra variedad de proyectos previos."
   },
   "ctaButton": {
     "title": "Veamos más",
@@ -11,17 +11,17 @@
   "carouselImages": [
     {
       "url": "/static/images/carousel-temp-1.jpg",
-      "alt": "image_1_alt",
+      "alt": "Previsualización de proyecto 1.",
       "category": "category_1"
     },
     {
       "url": "/static/images/carousel-temp-2.jpg",
-      "alt": "image_2_alt",
+      "alt": "Previsualización de proyecto 2.",
       "category": "category_2"
     },
     {
       "url": "/static/images/carousel-temp-3.jpg",
-      "alt": "image_3_alt",
+      "alt": "Previsualización de proyecto 3.",
       "category": "category_3"
     }
   ]

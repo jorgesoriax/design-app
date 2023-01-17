@@ -24,7 +24,7 @@ export default function ReadyTo({ data }) {
             zIndex: "-1",
           }}
         />
-        <VStack spacing={4}>
+        <VStack spacing={4} w={{lg: "60%"}}>
           <Heading as="h2" color="white" fontWeight="extrabold">
             {data.title}
           </Heading>

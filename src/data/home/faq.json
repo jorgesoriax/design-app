@@ -1,4 +1,8 @@
 {
+  "header": {
+    "title": "¿Aún cuentas con dudas?",
+    "description": "Revisa las preguntas más comunes que otras personas nos han hecho. Si no encuentras la respuesta que necesitas o deseas compartirnos tus comentarios, no dudes en poner en contacto con nosotros para discutir cómo podemos ayudarte."
+  },
   "faq": [
     {
       "question": "¿Cómo puedo pedir un diseño?",
@@ -20,9 +24,5 @@
       "question": "¿Cómo puedo asegurarme de que mi diseño es lo que busco?",
       "answer": "Durante el desarrollo de tu proyecto, cuentas con hasta 3 revisiones para hacer cambios y correcciones a tu diseño."
     }
-  ],
-  "header": {
-    "title": "Didn’t find what you were looking for?",
-    "description": "Donec quis arcu massa. Curabitur placerat condimentum vehicula. Nullam pulvinar, urna id scelerisque vulputate, arcu eros condimentum nulla, sit amet venenatis quam ligula ornare eros"
-  }
+  ]
 }

@@ -13,8 +13,8 @@ export default function PortfolioPreview({ data }) {
         spacing={{ base: 0, lg: 8 }}
       >
         <Header
-          title="Get once, use forever"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit, lectus quis..."
+          title={data.header.title}
+          description={data.header.description}
         />
         <LYLinkButton
           href={data.ctaButton.href}

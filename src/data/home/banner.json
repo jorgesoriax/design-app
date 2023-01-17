@@ -1,10 +1,10 @@
 {
   "title": "Creemos algo nuevo hoy mismo",
-  "description": "Unlock access to every existing design on Storytale and upcoming releases during whole subscribtion",
+  "description": "Estamos deseando trabajar contigo. Entendemos que el diseño gráfico es una parte fundamental de tu proyecto y nos esforzamos para que además de ser atractivos, transmitan tu mensaje.",
   "image": "/static/images/ready-to.jpg",
-  "alt": "test",
+  "alt": "Fondo complementario de color naranja con ondas delineadas de color amarillo.",
   "ctaButton": {
-    "title": "Get full access",
+    "title": "¡Hora de crear!",
     "href": "/services"
   }
 }
