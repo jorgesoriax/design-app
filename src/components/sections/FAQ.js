@@ -7,7 +7,7 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import { EnvelopeSimple, Minus, Phone, Plus } from "phosphor-react";
+import { At, Minus, PhoneCall, Plus } from "phosphor-react";
 import contact from "../../data/contact.json";
 import Header from "../Header";
 import LYLinkButton from "../LYLinkButton";
@@ -19,8 +19,8 @@ export default function FAQ({ data }) {
         spacing={4}
         direction={{ base: "column", md: "column", lg: "row" }}
       >
-        <LYLinkButton href="#">{contact.email}</LYLinkButton>
-        <LYLinkButton href="#" target="_blank" rel="noopener noreferrer">
+        <LYLinkButton leftIcon={<At size={32} weight="fill"/>} href="#">{contact.email}</LYLinkButton>
+        <LYLinkButton leftIcon={<PhoneCall size={32} weight="fill"/>} href="#" target="_blank" rel="noopener noreferrer">
           {contact.number}
         </LYLinkButton>
       </Stack>

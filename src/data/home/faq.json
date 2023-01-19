@@ -1,28 +1,40 @@
 {
   "header": {
-    "title": "¿Aún cuentas con dudas?",
-    "description": "Revisa las preguntas más comunes que otras personas nos han hecho. Si no encuentras la respuesta que necesitas o deseas compartirnos tus comentarios, no dudes en poner en contacto con nosotros para discutir cómo podemos ayudarte."
+    "title": "¿Todavia tienes dudas?",
+    "description": "Echa un vistazo a las preguntas más frecuentes que otras personas nos han hecho. Si no encuentras la respuesta que buscas o deseas compartir tus comentarios con nosotros, no dudes en ponerte en contactarnos para discutir cómo podemos ayudarte."
   },
   "faq": [
     {
-      "question": "¿Cómo puedo pedir un diseño?",
-      "answer": "En 3 simples pasos, cuéntanos sobre tu proyecto, recibe una cotización y una vez que lo aceptes y el diseño sea lo que necesitas, descargas los recursos de tu proyecto listos para usar."
+      "question": "(LISTO) ¿Cómo puedo solicitar un servicio?",
+      "answer": "Obtén un servicio en solo tres sencillos pasos: primero, comparte detalles sobre tu proyecto a través de un breve formulario de solicitud. Segundo, cuando se asigne un diseñador a tu proyecto, recibirás una notificación para comenzar el proceso de diseño apoyado por revisiones periódicas contigo. Por último, una vez estés completamente satisfecho con el resultado, te entregaremos un archivo con todos los recursos relacionados con tu proyecto."
     },
     {
-      "question": "¿En cuantó tiempo consigo mi diseño?",
-      "answer": "Donec quis arcu massa. Curabitur placerat condimentum vehicula. Nullam pulvinar, urna id scelerisque vulputate, arcu eros condimentum nulla, sit amet venenatis quam ligula ornare eros."
+      "question": "¿Cómo es el proceso de diseño?",
+      "answer": ""
     },
     {
-      "question": "¿Cuánto cuesta? ",
-      "answer": "El costo de cada servicio varía según la complejidad y urgencia de tu proyecto, consulta todos los precios en el siguiente enlace."
+      "question": "¿Cuánto tiempo tarda el proceso de diseño?",
+      "answer": ""
     },
     {
-      "question": "¿Qué recibire al finalizar el proyecto?",
-      "answer": "Según lo necesites, se te entregarán recursos en formato PNG, JPG, WEBP o SVG, editables en Canva, Photoshop o Illustrator y formatos en RGB para proyectos digitales y CMYK para proyectos de impresión."
+      "question": "(LISTO) ¿Cuánto cuesta obtener mi diseño? ",
+      "answer": "Ofrecemos diseños a precios a partir de $1,500 MXN, el costo final del servicio dependerá de tus requerimientos específicos. La complejidad y la urgencia del proyecto son factores determinantes en el precio final. Puedes encontrar toda la información de precios en nuestra página de Servicios, accesible desde la barra de navegación en la parte superior de esta página."
     },
     {
-      "question": "¿Cómo puedo asegurarme de que mi diseño es lo que busco?",
-      "answer": "Durante el desarrollo de tu proyecto, cuentas con hasta 3 revisiones para hacer cambios y correcciones a tu diseño."
+      "question": "(LISTO) ¿Por qué necesito rellenar un formulario?",
+      "answer": "Nuestra misión es ayudarte a comunicar tu mensaje a través de recursos visuales. Al responder nuestro formulario, podremos conocerte a ti y a tu proyecto, comprendiendo los objetivos y personalidades de ambos. De esta manera, podremos desarrollar una estrategia para definir la dirección que tomará el desarrollo de tu diseño."
+    },
+    {
+      "question": "(LISTO) ¿Qué son las revisiones y cómo puedo usarlas?",
+      "answer": "Al comenzar el proyecto, contarás con 3 revisiones gratuitas. Las revisiones son peticiones que puedes hacer a el diseñador para realizar modificaciones o correcciones al diseño sin costos adicionales."
+    },
+    {
+      "question": "(LISTO) ¿Qué archivos obtendré y cómo podré descargarlos una vez que el proyecto finalice?",
+      "answer": "De acuerdo con lo que nos indiques en el formulario, te haremos llegar todos los recursos relacionados con tu proyecto en un archivo comprimido en formatos como JPG, PNG, WEBP o SVG, así como en archivos editables para programas como Photoshop, Illustrator, Canva o Affinity Designer, de esta forma podrás editar tu diseño si lo necesitas. Para descargar el archivo comprimido solo debes acceder a un enlace seguro que te haremos llegar."
+    },
+    {
+      "question": "(LISTO) ¿Cómo puedo asegurarme de que mi diseño es lo que busco?",
+      "answer": "Para asegurarnos de que tu diseño se ajuste lo máximo posible a tus expectativas, te ofrecemos la posibilidad de realizar hasta 3 revisiones durante el proceso de diseño. De esta forma podrás hacer cambios y correcciones según tus necesidades y gustos."
     }
   ]
 }
