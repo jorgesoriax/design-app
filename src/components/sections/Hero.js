@@ -10,12 +10,13 @@ export function HeroWithBackground({ data, ...props }) {
         <Heading
           as="h1"
           fontSize={{ base: "5xl", lg: "6xl" }}
+          color="white"
           fontWeight="extrabold"
           textAlign="center"
         >
           {data.title}
         </Heading>
-        <Text fontSize="lg" color="gray.600" textAlign="center">
+        <Text fontSize="lg" color="white" textAlign="center">
           {data.description}
         </Text>
       </Stack>
@@ -48,16 +49,16 @@ export function HeroWithBackground({ data, ...props }) {
         justify="center"
         align="center"
         spacing={12}
-        border="1px"
+        // border="1px"
         mb={12}
-        borderColor="gray.200"
+        // borderColor="gray.200"
         borderRadius="2xl"
         h="100%"
         p={8}
-        // bgImage="url('/static/images/ready-to.jpg')"
-        // bgPosition="center"
-        // bgRepeat="no-repeat"
-        // bgSize="cover"
+        bgImage="url('/static/images/hero.jpg')"
+        bgPosition="center"
+        bgRepeat="no-repeat"
+        bgSize="cover"
       >
         <TextContent />
         <Actions />

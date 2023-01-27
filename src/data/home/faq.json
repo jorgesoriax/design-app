@@ -5,35 +5,35 @@
   },
   "faq": [
     {
-      "question": "(LISTO) ¿Cómo puedo solicitar un servicio?",
+      "question": "¿Cómo puedo solicitar un servicio?",
       "answer": "Obtén un servicio en solo tres sencillos pasos: primero, comparte detalles sobre tu proyecto a través de un breve formulario de solicitud. Segundo, cuando se asigne un diseñador a tu proyecto, recibirás una notificación para comenzar el proceso de diseño apoyado por revisiones periódicas contigo. Por último, una vez estés completamente satisfecho con el resultado, te entregaremos un archivo con todos los recursos relacionados con tu proyecto."
     },
     {
-      "question": "¿Cómo es el proceso de diseño?",
-      "answer": ""
+      "question": "¿Cómo adaptan un proceso de diseño a las necesidades de mi proyecto?",
+      "answer": "Nuestro proceso creativo y técnico se enfoca en lograr una comunicación efectiva. Para alcanzar este objetivo, es esencial recopilar toda la información revelante sobre tu proyecto. Con esta información, podremos ajustar nuestras estrategias para lograr comunicar de manera efectiva tu mensaje a tu público objetivo y entregarte los recursos necesarios."
     },
     {
       "question": "¿Cuánto tiempo tarda el proceso de diseño?",
-      "answer": ""
+      "answer": "La duración del proceso de diseño varía según el servicio que solicites. El plazo puede oscilar entre 5 y 14 días. Sin embargo, si prefieres obtener el diseño en un plazo más breve, puedes optar por pagar un extra para acelerar tu servicio. Para obtener información, no dudes en escribirnos o revisar la página de Servicios."
     },
     {
-      "question": "(LISTO) ¿Cuánto cuesta obtener mi diseño? ",
-      "answer": "Ofrecemos diseños a precios a partir de $1,500 MXN, el costo final del servicio dependerá de tus requerimientos específicos. La complejidad y la urgencia del proyecto son factores determinantes en el precio final. Puedes encontrar toda la información de precios en nuestra página de Servicios, accesible desde la barra de navegación en la parte superior de esta página."
+      "question": "¿Cuánto cuesta obtener mi diseño? ",
+      "answer": "Ofrecemos diseños a partir de $1,500 MXN, el costo final del servicio dependerá de tus requerimientos específicos. La complejidad y la urgencia del proyecto son factores determinantes en el precio final. Puedes encontrar toda la información de precios en nuestra página de Servicios, accesible desde la barra de navegación en la parte superior de esta página."
     },
     {
-      "question": "(LISTO) ¿Por qué necesito rellenar un formulario?",
+      "question": "¿Por qué necesito rellenar un formulario?",
       "answer": "Nuestra misión es ayudarte a comunicar tu mensaje a través de recursos visuales. Al responder nuestro formulario, podremos conocerte a ti y a tu proyecto, comprendiendo los objetivos y personalidades de ambos. De esta manera, podremos desarrollar una estrategia para definir la dirección que tomará el desarrollo de tu diseño."
     },
     {
-      "question": "(LISTO) ¿Qué son las revisiones y cómo puedo usarlas?",
+      "question": "¿Qué son las revisiones y cómo puedo usarlas?",
       "answer": "Al comenzar el proyecto, contarás con 3 revisiones gratuitas. Las revisiones son peticiones que puedes hacer a el diseñador para realizar modificaciones o correcciones al diseño sin costos adicionales."
     },
     {
-      "question": "(LISTO) ¿Qué archivos obtendré y cómo podré descargarlos una vez que el proyecto finalice?",
+      "question": "¿Qué archivos obtendré y cómo podré descargarlos una vez que el proyecto finalice?",
       "answer": "De acuerdo con lo que nos indiques en el formulario, te haremos llegar todos los recursos relacionados con tu proyecto en un archivo comprimido en formatos como JPG, PNG, WEBP o SVG, así como en archivos editables para programas como Photoshop, Illustrator, Canva o Affinity Designer, de esta forma podrás editar tu diseño si lo necesitas. Para descargar el archivo comprimido solo debes acceder a un enlace seguro que te haremos llegar."
     },
     {
-      "question": "(LISTO) ¿Cómo puedo asegurarme de que mi diseño es lo que busco?",
+      "question": "¿Cómo puedo asegurarme de que mi diseño es lo que busco?",
       "answer": "Para asegurarnos de que tu diseño se ajuste lo máximo posible a tus expectativas, te ofrecemos la posibilidad de realizar hasta 3 revisiones durante el proceso de diseño. De esta forma podrás hacer cambios y correcciones según tus necesidades y gustos."
     }
   ]
