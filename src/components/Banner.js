@@ -25,7 +25,7 @@ export default function ReadyTo({ data }) {
           }}
         />
         <VStack spacing={4} w={{lg: "60%"}}>
-          <Heading as="h2" color="white" fontWeight="extrabold">
+          <Heading as="h2" color="white">
             {data.title}
           </Heading>
           <Text color="white">{data.description}</Text>

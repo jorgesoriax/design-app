@@ -1,0 +1,57 @@
+{
+  "header": {
+    "title": "Title",
+    "description": "Description"
+  },
+  "services": [
+    {
+      "id": "01",
+      "title": "Title of service 1",
+      "description": "Description of service",
+      "basePrice": "2000",
+      "features": ["Feature A", "Feature B", "Feature C"]
+    },
+    {
+      "id": "02",
+      "title": "Title of service 2",
+      "description": "Description of service",
+      "basePrice": "1500",
+      "features": ["Feature A", "Feature B", "Feature C"]
+    },
+    {
+      "id": "03",
+      "title": "Title of service 3",
+      "description": "Description of service Description of service Description of service Description of service",
+      "basePrice": "500",
+      "features": ["Feature A", "Feature B", "Feature C"]
+    },
+    {
+      "id": "04",
+      "title": "Title of service 4",
+      "description": "Description of service",
+      "basePrice": "500",
+      "features": ["Feature A", "Feature B", "Feature C", "Feature D", "Feature E", "Feature F", "Feature G", "Feature H", "Feature I"]
+    },
+    {
+      "id": "05",
+      "title": "Title of service 5 Title of service 5",
+      "description": "Description of service",
+      "basePrice": "400000000000",
+      "features": ["Feature A", "Feature B", "Feature C"]
+    },
+    {
+      "id": "06",
+      "title": "Title of service 6",
+      "description": "Description of service",
+      "basePrice": "20200.99",
+      "features": ["Feature A"]
+    },
+    {
+      "id": "07",
+      "title": "Title of service 7 Title of service 7",
+      "description": "Description of service",
+      "basePrice": "8000",
+      "features": ["Feature A", "Feature B", "Feature C"]
+    }
+  ]
+}

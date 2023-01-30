@@ -14,10 +14,10 @@ export default function Onboarding({ data }) {
         borderRadius="2xl"
         w={{ base: "100%", md: "30%" }}
         minW="250px"
-        p={{ base: 4, md: 6 }}
+        p={{ base: 4, lg: 6 }}
       >
         <Stack
-          position="relative"
+          pos="relative"
           align="center"
           justify="center"
           boxSize={{ base: "150px", md: "250px" }}
@@ -36,7 +36,6 @@ export default function Onboarding({ data }) {
           <Heading
             as="h3"
             fontSize={26}
-            fontWeight="extrabold"
             textAlign="center"
           >
             {title}

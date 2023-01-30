@@ -1,8 +1,8 @@
 import Head from "next/head";
-import { Container, Text } from "@chakra-ui/react";
 import Navbar from "../src/components/Navbar";
 import Footer from "../src/components/Footer";
 import LYContainer from "../src/components/LYContainer"
+import Pricing from "../src/components/sections/Pricing";
 
 export default function Services() {
   return (
@@ -19,6 +19,7 @@ export default function Services() {
 
       <LYContainer>
         <Navbar />
+        <Pricing/>
         <Footer />
       </LYContainer>
     </div>

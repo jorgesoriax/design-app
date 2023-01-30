@@ -7,7 +7,6 @@ export default function Header({ section, title, description, ...props }) {
       <Heading
         as="h2"
         fontSize={{ base: 32, md: 45 }}
-        fontWeight="extrabold"
         lineHeight="1"
       >
         {title}

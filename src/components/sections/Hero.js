@@ -11,7 +11,6 @@ export function HeroWithBackground({ data, ...props }) {
           as="h1"
           fontSize={{ base: "5xl", lg: "6xl" }}
           color="white"
-          fontWeight="extrabold"
           textAlign="center"
         >
           {data.title}
