@@ -70,7 +70,15 @@ export default function Pricing() {
   };
   const PricingContainer = () => {
     return (
-      <Grid templateColumns="repeat(4, 25%)" gap={8}>
+      <Grid
+        gridTemplateColumns={{
+          base: "100%",
+          md: "repeat(2, calc(50% - 1rem))",
+          lg: "repeat(3, calc(33.33% - 1.33rem))",
+          xl: "repeat(4, calc(25% - 1.5rem))",
+        }}
+        gap={8}
+      >
         {data.services.map(({ ...data }, index) => (
           <GridItem key={index}>
             <PriceCard {...data} />
